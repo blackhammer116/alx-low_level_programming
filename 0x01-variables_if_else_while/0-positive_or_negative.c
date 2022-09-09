@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
 * Description: main - sets a random value to variable n
-* and checks if it's positive zero oor negative. 
+* and checks if it's positive zero or negative.
 *
 *Return: 0 if functional.
 */
@@ -27,7 +27,7 @@ int main(void)
 				{
 				printf("%d is negative\n", n);
 				}
-				else 
+				else
 				{
 				printf("%d is positive\n", n);
 				}
