@@ -1,14 +1,14 @@
 #include <stdio.h>
- /**
-  *Description: main - prints lower case then upper followed by new line.
-  *
-  * *Return: 0 if functional
-  */
+/**
+ *Description: main - prints lower case then upper followed by new line.
+ *
+ *Return: 0 if functional
+ */
 int main(void)
 
 {
 		char ch;
-		
+
 		for (ch = 'a'; ch <= 'z'; ch++)
 		{
 			putchar(ch);
