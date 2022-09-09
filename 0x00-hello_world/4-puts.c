@@ -2,7 +2,8 @@
 
 /*Description:- The main function will print out 
  * \"Programming is like building a multilingual puzzle 
- * and then return 0 if the code is functional*/
+ * and then return 0 if the code is functional
+*/
 
 int main(void)
 {
