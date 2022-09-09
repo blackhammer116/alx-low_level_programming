@@ -1,19 +1,12 @@
 #include <stdlib.h>
-
 #include <time.h>
 #include <stdio.h>
-
-/* more headers goes there */
-
-
-
 /**
 * Description: main - sets a random value to variable n
 * and checks if it's positive zero oor negative. 
 *
 *Return: 0 if functional.
 */
-
 int main(void)
 
 {
