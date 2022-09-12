@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - combinations
+ *
+ * Return: 0 if functional
+ */
+int main(void)
+{
+	int num1,num2;
+
+	for (num1 = 48; num1 <= 56; n++)
+	{
+		for (num2 = 49; num2 <= 57; m++)
+		{
+			if (num2 > num1)
+			{
+				putchar(num1);
+				putchar(num2);
+				if (num1 != 56 || num2!=57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+return (0);
+}
