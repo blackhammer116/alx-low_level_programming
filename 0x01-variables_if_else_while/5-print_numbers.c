@@ -3,7 +3,7 @@
 /**
  * Description: main - this function will print out numbers of base 10
  *
- * Return 0 if funtional
+ * Return: 0 if funtional
  */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	for (num = 0; num < 10 ; num++)
 	{
-		printf("%d",num);
+		printf("%d", num);
 	}
 	printf("\n");
 return (0);
