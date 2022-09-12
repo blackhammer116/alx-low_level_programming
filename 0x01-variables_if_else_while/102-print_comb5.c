@@ -3,7 +3,7 @@
 /**
  * main - double combinations
  *
- * Returns: 0 
+ * Return: 0 if functional
  */
 int main(void)
 {
