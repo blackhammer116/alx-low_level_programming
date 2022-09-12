@@ -9,19 +9,20 @@ int main(void)
 {
 	int num1, num2;
 
-	for (num1 = 48; num1 <= 56; num1++)
+	for (num1 = 0; num1 < 8; num1++)
 	{
-		for (num2 = 49; num2 <= 57; num2++)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			if (num2 > num1)
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
+			if (num1 == 8 && num2 == 9)
 			{
-				putchar(num1);
-				putchar(num2);
-				if (num1 != 56 || num2 != 57)
-				{
+				continue
+			}	
+				
 					putchar(',');
 					putchar(' ');
-				}
+				
 			}
 		}
 	}
