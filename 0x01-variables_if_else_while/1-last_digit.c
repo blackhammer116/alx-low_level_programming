@@ -4,15 +4,12 @@
 /**
  * Description: main - checks if n's last digit is greater than five or 0 or less than 6 and not equal to zero.
  *
- *Return: 0 if functional
+ *Return: 0
  */
 int main(void)
-
 {
 
 		int n;
-
-
 
 			srand(time(0));
 
