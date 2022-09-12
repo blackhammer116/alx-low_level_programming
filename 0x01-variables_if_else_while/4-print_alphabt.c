@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include <stdlib.h>
 /**
  *Description: main - the functions print the alphabet except
@@ -9,21 +8,16 @@
  *
  */
 int main()
-
 {
-	    char ch;
-
-        for (ch='a'; ch <= 'z'; ch++)
-  {
-          if (ch == 'e' || ch == 'q')
+	char ch;
+	for (ch ='a'; ch <= 'z'; ch++)
+	{	
+	  if (ch == 'e' || ch == 'q')
        {
-          ch+;
+	       continue;
        }
-          else if (ch != 'e' || ch != 'q')
-       {
-          putchar(ch);
-       }
-       }
-   putchar('\n');
+	  putchar(ch);
+  }
+	putchar('\n');
    return 0;
 }
