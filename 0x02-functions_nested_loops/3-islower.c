@@ -5,5 +5,5 @@
  */
 int _islower(int c)
 {
-	_putchar(islower(c));
+	islower(c);
 }
