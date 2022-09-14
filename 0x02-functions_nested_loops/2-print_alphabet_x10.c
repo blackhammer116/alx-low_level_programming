@@ -2,7 +2,7 @@
 /**
  *print_alphabet_x10 - prints 10x alphabet in lower case
  */
-void print_alphabet_x10()
+void print_alphabet_x10(void)
 {
 	int alpha;
 	int i;
@@ -14,5 +14,5 @@ void print_alphabet_x10()
 			_putchar(alpha);
 		}
 		_putchar('\n');
-	} 
+	}
 }
