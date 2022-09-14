@@ -1,12 +1,13 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - prints _putchar
  * Return: 0
  */
 int main(void)
 {
-	char name[] = "_putchar";
-	for (int i = 0; i <= 8; i++)
+	char name[8] = "_putchar";
+	for (int i = 0; i <= 7; i++)
 	{
 	_putchar(name[i]);
 	}
