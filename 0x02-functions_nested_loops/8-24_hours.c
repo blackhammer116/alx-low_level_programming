@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *jack_bauer - prints out the 24 hrs 
+ *jack_bauer - prints out the 24 hrs
  *
  */
 void jack_bauer(void)
@@ -10,7 +10,7 @@ void jack_bauer(void)
 	int c = 0;
 	int d = 0;
 
-	while(a <= 2)
+	while (a <= 2)
 	{
 		if (d > 9)
 		{
