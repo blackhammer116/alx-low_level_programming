@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * print_alphabet - prints alphabet in lower
  * Return: 0
