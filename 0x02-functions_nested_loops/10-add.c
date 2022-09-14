@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *add - adds two numbers and prints output
- *Return: sum
+ *Return: sum of two numbers
  */
 int add(int num1, int num2)
 {
