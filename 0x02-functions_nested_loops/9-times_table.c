@@ -13,8 +13,15 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			x = i * j;
-			if (j == 0 && x < 10)
+			if (j == 0)
 				_putchar(x + '0');
+			if (x < 10 && j != 0)
+			{
+				_putchar(',');
+				_puthcar(' ');
+				_putchar(' ');
+				_putchar(x + '0');
+			}
 			else if (x >= 10)
 			{
 				_putchar((x / 10) + '0');
