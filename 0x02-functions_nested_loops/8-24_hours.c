@@ -1,4 +1,4 @@
-#include "math.h"
+#include "main.h"
 /**
  *jack_bauer - prints out the 24 hrs 
  *
