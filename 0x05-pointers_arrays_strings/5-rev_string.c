@@ -9,13 +9,16 @@ void rev_string(char *s)
 {
 	int i = 0;
 
+
 	while (s[i] != '\0')
 	{
 		i++;
 	}
+	char d[i];
+
 	for (i -= 1; i >= 0; i--)
 	{
-		putchar(s[i]);
+		d[i] = s[i];
 	}
 	putchar('\n');
 }
