@@ -8,11 +8,21 @@
 void rev_string(char *s)
 {
 	int i = 0;
-	
+	int j = strlen(s);
+	int k = 0;
+	char rev[100000];
+
 	i = strlen(s);
 	for (i -= 1; i >= 0; i--)
 	{
-		printf("%c", s[i]);
+		if (j - 1 != k)
+			rev[k] = s[i];
+		k++;
 	}
-	printf("\n");
+	for (i = 0; i <= j; i++)
+	{
+		if (rev[i] == 0)
+			break;
+		s[i] = rev[i];
+	}
 }
