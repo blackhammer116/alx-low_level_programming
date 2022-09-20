@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *puts2 - prints even indexes of a string
- @str: string parameter.
+ @str: first parameter.
  */
 void puts2(char *str)
 {
