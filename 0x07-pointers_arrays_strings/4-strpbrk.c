@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *_strpbrk - compares two strings and returns their common value
  * @s: string for cross reference.
@@ -15,7 +16,9 @@ char *_strpbrk(char *s, char *accept)
 		for (n = 0; accept[n] != 0; n++)
 		{
 			if (s[i] == accept[n])
-				return (s + i);
+			{
+				return ((s + i));
+			}
 		}
 	}
 	return (NULL);
