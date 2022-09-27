@@ -8,9 +8,9 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n, i, c;
+	unsigned int n, i, c = 0;
 
-	for (i = 0; 1 ; i++)
+	for (i = 0; s[i] != 0; i++)
 	{
 		if (s[i] == ' ')
 			break;
