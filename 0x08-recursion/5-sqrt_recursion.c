@@ -17,12 +17,12 @@ int _sqrt_recursion(int n)
 	return (_natural_sqrt(n, 1));
 }
 /**
- * _sqrt - the recursive function that calculates
+ * _natural_sqrt - the recursive function that calculates
  * the natural square root of a function
  * @n: the number passed from the first function
  * @i: the number that gets iterated and checked for
  * the answer.
- * Return: the natural sqrt 
+ * Return: the natural sqrt
  */
 int _natural_sqrt(int n, int i)
 {
