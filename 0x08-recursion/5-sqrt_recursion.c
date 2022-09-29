@@ -9,7 +9,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 1));
+	return (_natural_sqrt(n, 1));
 }
 /**
  * _sqrt - the recursive function that calculates
@@ -18,12 +18,12 @@ int _sqrt_recursion(int n)
  * @i: the number that gets iterated and checked for
  * the answer.
  */
-int _sqrt(int n, int i)
+int _natural_sqrt(int n, int i)
 {
 	int sqrt = i * i;
 	if (sqrt > n)
 		return (-1);
 	if (sqrt == n)
 		return (i);
-	return (_sqrt(n, i + 1));
+	return (_natural_sqrt(n, i + 1));
 }
