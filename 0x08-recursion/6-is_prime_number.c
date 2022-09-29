@@ -1,10 +1,10 @@
 #include "main.h"
 /**
+ * is_prime_number - main function that determines if
+ * the number passed is prime or not
  * check_prime - checks if the number is prime
  * @n: passed parameter
  * @i: iterative parameter
- * is_prime_number: determines if the number passed is prime or
- * not
  * @n: number to be checked
  * Return: returns check_prime function
  */
