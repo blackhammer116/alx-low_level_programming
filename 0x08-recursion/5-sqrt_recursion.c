@@ -3,7 +3,9 @@
 /**
  * _sqrt_recursion - calculates the natuarl square root of a
  *  number
- *  _natural_sqrt - function that calculates the natural sqrt
+ *  _natural_sqrt: function that calculates the natural sqrt
+ *  @n: passed parmeter
+ *  @i: iterating parameter
  *  @n: int parameter
  *  Return: returns the recursive function that will
  *  then calculate the natural square root
@@ -20,10 +22,12 @@ int _sqrt_recursion(int n)
  * @n: the number passed from the first function
  * @i: the number that gets iterated and checked for
  * the answer.
+ * Return: the natural sqrt 
  */
 int _natural_sqrt(int n, int i)
 {
 	int sqrt = i * i;
+
 	if (sqrt > n)
 		return (-1);
 	if (sqrt == n)
