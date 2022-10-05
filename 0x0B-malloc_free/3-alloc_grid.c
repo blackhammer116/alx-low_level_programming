@@ -4,7 +4,7 @@
  * alloc_grid - creates 2 dimensional array
  * @width: width of the array
  * @height: height of the array
- * Return; either NULL or the two dimensional array
+ * Return: either NULL or the two dimensional array
  */
 int **alloc_grid(int width, int height)
 {
