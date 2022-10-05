@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup - pointes to a string that has the same memory of the 
+ * _strdup - pointes to a string that has the same memory of the
  * given parameter
  * @str: string parameter to be passed
  * Return: the string pointer a.
