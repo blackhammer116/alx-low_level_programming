@@ -10,6 +10,7 @@ char *argstostr(int ac, char **av)
 {
 	int ch = 0, i = 0, j = 0, k = 0;
 	char *s;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	while (i < ac)
@@ -28,11 +29,11 @@ char *argstostr(int ac, char **av)
 	{
 		while (av[i][j])
 		{
-			s[k] = av [i][j];
+			s[k] = av[i][j];
 			k++;
 			j++;
 		}
-		s[k] ='\n';
+		s[k] = '\n';
 		j = 0;
 		k++;
 		i++;
