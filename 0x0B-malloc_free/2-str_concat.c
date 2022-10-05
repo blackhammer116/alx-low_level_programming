@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i = 1, j = 0;
-	char *a, b;
+	char *a, *b;
 
 	b = strcat(s1, s2);
 	while (b[i])
