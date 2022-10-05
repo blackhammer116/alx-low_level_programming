@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 #include <stdlib.h>
 /**
  * str_concat - allocates memory and concatenates two strings
@@ -9,22 +8,35 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 1, j = 0;
-	char *a, *b;
+	int i = 0, k = 0, l = 0, j = 0;
+	char *a;
 
-	b = strcat(s1, s2);
-	while (b[i])
-	{
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	while (s1[i])
 		i++;
-	}
-	a = malloc((sizeof(char) * i) + 1);
-	if (a == NULL)
-		return (NULL);
-	while (j < i)
+	while (s2[j])
 	{
-		a[j] = b[j];
 		j++;
 	}
-	a[j] = '\0';
+	l = i + j;
+	a = malloc((sizeof(char) * l) + 1);
+	if (a == NULL)
+		return (NULL);
+	j = 0;
+	while (k < l)
+	{
+		if (k <= i)
+			a[k] = s1[k];
+		if (k >= i)
+		{
+			a[k] = s2[j];
+			j++;
+		}
+		k++;
+	}
+	a[k] = '\0';
 	return (a);
 }
