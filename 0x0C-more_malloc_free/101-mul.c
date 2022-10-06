@@ -74,59 +74,124 @@ int main(int argc, char **argv)
 
 																																		result[len1 + len2 + 1] = carry % 10;
 
-																			carry /= 10;
-	}
-	if (carry > 0)																result[len1 + len2 + 1] += carry;
-	}
-	for (i = 0; i < len - 1; i++)
-	{
-		if (result[i])
-			a = 1;
-		if (a)
-			_putchar(result[i] + '0');
-	}
-	if (!a)
-		_putchar('0');
-	_putchar('\n');
-	free(result);
-	return (0);
+																																					carry /= 10;
+
+																																							}
+
+																							if (carry > 0)
+
+																											result[len1 + len2 + 1] += carry;
+
+																								}
+
+													for (i = 0; i < len - 1; i++)
+
+															{
+
+																		if (result[i])
+
+																						a = 1;
+
+																				if (a)
+
+																								_putchar(result[i] + '0');
+
+																					}
+
+														if (!a)
+
+																	_putchar('0');
+
+															_putchar('\n');
+
+																free(result);
+
+																	return (0);
+
 }
+
+
+
 /**
- * is_digit - checks if every character of a string is a digit
- * @s: the string to be checked
- * Return: returns 0 if a non-digit is found, 1 otherwise
- */
-int is_digit(char *s)
-{
-	int i = 0;
-	
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] < '0' || s[i] > '9')
-			return (0);
-	}
-	return (1);
-}
-/**
- * _strlen - calculates the length of a string (excluding the null-terminator)
- * @s: the string to be checked
- * Return: returns the length of the string as an int
- */
-int _strlen(char *s)
-{
-	int i = 0, c = 0;
-	for (i = 0; s[i] != '\0'; i++)
-		c++;
-	return (c);
-}
-/**
- * errors - prints out "Error" if an error is encountered and exits with
- * a status of 98
- * Return: returns nothing
+ *
+ * * is_digit - checks if every character of a string is a digit
+ *
+ * * @s: the string to be checked
+ *
+ * * Return: returns 0 if a non-digit is found, 1 otherwise
  *
  * */
-void errors(void)
+
+int is_digit(char *s)
+
 {
-	printf("Error\n");
-	exit(98);
+
+		int i = 0;
+
+
+
+			for (i = 0; s[i] != '\0'; i++)
+
+					{
+
+								if (s[i] < '0' || s[i] > '9')
+
+												return (0);
+
+									}
+
+				return (1);
+
+}
+
+
+
+/**
+ *
+ * * _strlen - calculates the length of a string (excluding the null-terminator)
+ *
+ * * @s: the string to be checked
+ *
+ * * Return: returns the length of the string as an int
+ *
+ * */
+
+int _strlen(char *s)
+
+{
+
+		int i = 0, c = 0;
+
+
+
+			for (i = 0; s[i] != '\0'; i++)
+
+						c++;
+
+
+
+				return (c);
+
+}
+
+
+
+/**
+ *
+ * * errors - prints out "Error" if an error is encountered and exits with
+ *
+ * * a status of 98
+ *
+ * * Return: returns nothing
+ *
+ * */
+
+void errors(void)
+
+{
+
+		printf("Error\n");
+
+			exit(98);
+
 }
