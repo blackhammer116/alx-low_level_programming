@@ -46,7 +46,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (i = 0; 1; i++)
 	{
-		(*(newDOG->owner + i)) = owner[i]
+		(*(newDOG->owner + i)) = owner[i];
 			if (owner[i] == '\0')
 				break;
 	}
