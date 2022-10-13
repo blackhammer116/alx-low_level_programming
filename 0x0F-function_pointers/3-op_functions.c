@@ -1,4 +1,3 @@
-#include "3-cal.h"
 /**
  * op_add - adds a and b
  * @a: first parameter

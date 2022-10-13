@@ -6,6 +6,7 @@
  * main - simple calculator
  * @argc: argument counter
  * @argv: argument array
+ * Return: the resul
  */
 int main(int argc, char *argv[])
 {
