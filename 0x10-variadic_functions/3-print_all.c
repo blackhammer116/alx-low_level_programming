@@ -10,71 +10,44 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	unsigned int i = 0, j = 0;
-	char *separator = "";
-
-	f_dt f2[] = {
-		{"c", CHAR},
-		{"i", INT},
-		{"f", FLOAT},
-		{"s", STR}
-	};
+	char *str;
+	
 	va_start(ap, format);
-	while (format != NULL && format[i])
+	while (format != NULL && j < 1)
 	{
-		while (j < 4)
+		while (format[i] != '\0')
 		{
-			if (format[i] == *f2[j].identifier)
+			if (format[i] == 'c')
 			{
-				f2[j].f(separator, ap);
-				separator = ", ";
+				printf("%c", va_arg(ap, int));
+			}
+			else if (format[i] == 'i')
+			{
+				printf("%d", va_arg(ap, int));
+			}
+			else if(format[i] == 'f')
+			{
+				printf("%f", va_arg(ap, int));
+			}
+			else if(format[i] == 's')
+			{
+				str = va_arg(ap, char *);
+				if (str == NULL)
+					str = "(nil)";
+				printf("%s", str);
+			}
+			else
+			{
+				i++;
+				j++;
 			}
 			j++;
+			if (format[i + 1] == '\0')
+				break;
+			printf(", ");
+			i++;
 		}
-		i++;
 	}
 	va_end(ap);
 	printf("\n");
-}
-/**
- * CHAR - prints char
- * @separator: separator
- * @ap: second parameter
- */
-void CHAR(char *separator, va_list ap)
-{
-	printf("%s%c", separator, va_arg(ap, int));
-}
-/**
- * INT - prints int
- * @separator: separator
- * @ap: second parameter
- */
-void INT(char *separator, va_list ap)
-{
-	printf("%s%i", separator, va_arg(ap, int));
-}
-/**
- * FLOAT - prints float
- * @separator: separator
- * @ap: second parameter
- */
-void FLOAT(char *separator, va_list ap)
-{
-	printf("%s%f", separator, va_arg(ap, double));
-}
-/**
- * STR - prints string
- * @separator: separator
- * @ap: second parameter
- */
-void STR(char *separator, va_list ap)
-{
-	char *arg = va_arg(ap, char *);
-
-	if (arg == NULL)
-	{
-		printf("%s(nil)", separator);
-		return;
-	}
-	printf("%s%s", separator, arg);
 }
