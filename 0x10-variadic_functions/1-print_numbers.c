@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  * print_numbers - prints specified numbers and their separator
- * @separator: parameter that defines the separator 
- * @int: parameter that defines how many numbers that gets printed
+ * @separator: parameter that defines the separator
+ * @n: parameter that defines how many numbers that gets printed
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			if (i != n - 1 && separator != NULL)
 			{
 				printf("%s", separator);
-			}	
+			}
 			i++;
 		}
 		va_end(ap);
