@@ -11,13 +11,13 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	unsigned int i = 0, j = 0;
 	char *str;
-	
+
 	va_start(ap, format);
 	while (format != NULL && j < 1)
 	{
 		while (format[i] != '\0')
 		{
-			switch(format[i])
+			switch (format[i])
 			{
 				case 'c':
 					printf("%c", va_arg(ap, int));
