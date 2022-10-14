@@ -13,7 +13,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (n > 0)
 	{
-		va_start(ap, n);
+		va_start(ap, int);
+
 		while (i < n)
 		{
 			printf("%d", va_arg(ap, n));
