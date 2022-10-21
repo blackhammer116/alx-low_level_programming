@@ -3,7 +3,7 @@
  * add_node_end - adds a new node at the end of the list
  * @head: head pointer
  * @str: element that gets added
- * Return: NULL if fail and the new "new" node if 
+ * Return: NULL if fail and the new "new" node if
  * success
  */
 list_t *add_node_end(list_t **head, const char *str)
@@ -30,5 +30,5 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (temp->next)
 		temp = temp->next;
 	temp->next = new;
-	return(new);
+	return (new);
 }
