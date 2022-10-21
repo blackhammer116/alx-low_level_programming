@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 /**
  * print_ list - prints elements of a list
  * @h: list pointer

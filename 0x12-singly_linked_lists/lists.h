@@ -4,6 +4,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * struct lsit_s - struct for the linked list
+ * @str: string parameter
+ * @len: length of the string
+ * @next: pointer to the next data field
+ */
+typedef struct list_s
+{
+	char *str;
+	unsigned int len;
+	struct next;
+}list_t;
+
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
