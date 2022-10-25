@@ -4,6 +4,7 @@
  * list
  * @head: head pointer
  * @n: new node
+ * Return: the new node
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
@@ -23,6 +24,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	temp->next = *head;
 	temp->n = n;
 	*head = temp;
-	
 	return (temp);
 }
