@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
  * @fd2: pointer to the second file
  *
  */
-void _close(char **BUF, int *fd1, int fd2)
+void _close(char **BUF, int *fd1, int *fd2)
 {
 	int n, m;
 
