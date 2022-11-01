@@ -1,6 +1,6 @@
 #include "main.h"
 
-void close(char **BUF, int *fd1, int *fd2);
+void _close(char **BUF, int *fd1, int *fd2);
 /**
  * main - main function that copies the content of
  * a file into another
