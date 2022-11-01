@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		i = read(fd_from, buf, 1024);
 		if (i == -1)
 		{
-			dprintf(STDOUR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 		j = write(fd_to, buf, i);
@@ -47,18 +47,18 @@ int main(int argc, char *argv[])
 		}
 		n++;
 	} while (i == 1024);
-	close(BUF, fd1, fd2);
+	_close(BUF, fd1, fd2);
 
 	return (0);
 }
 /**
- * close - closes opened files and frees malloc
+ * _close - closes opened files and frees malloc
  * @BUF: pointer to a buffer
  * @fd1: pointer to the first file
  * @fd2: pointer to the second file
  *
  */
-void close(char **BUF, int *fd1, int fd2)
+void _close(char **BUF, int *fd1, int fd2)
 {
 	int n, m;
 
