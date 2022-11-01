@@ -8,7 +8,8 @@
 int check(const char *filename)
 {
 	struct stat buffer;
-	return(stat(filename, &buffer) == 0);
+
+	return (stat(filename, &buffer) == 0);
 }
 /**
  * append_text_to_file - appends a text into an existing file
@@ -27,7 +28,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!check(filename))
 		return (-1);
 
-	fd = open(filename, O_WRONLY | O_APPEND | O_TRUNC, 0600);
+	fd = open(filename, O_WRONLY | O_APPEND, 0600);
 
 	if (!text_content)
 	{
