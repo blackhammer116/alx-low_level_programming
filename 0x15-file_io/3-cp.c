@@ -32,6 +32,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	buf = malloc(sizeof(char) * 1024);
+	if (!buf)
+		return (-1);
+
 	do {
 		i = read(fd_from, buf, 1024);
 		if (i == -1)
@@ -40,7 +43,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 		j = write(fd_to, buf, i);
-		if (j == -1)
+		if (j != i)
 		{
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
