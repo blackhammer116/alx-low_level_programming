@@ -10,7 +10,7 @@ int main(void)
 
 	for (i = 2; i < num; i++)
 	{
-		if ((num % 1) == 0)
+		if ((num % i) == 0)
 			num = num / i;
 	}
 	printf("%ld\n", i);
