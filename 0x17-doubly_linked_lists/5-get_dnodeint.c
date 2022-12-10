@@ -4,6 +4,8 @@
  * a given position
  * @head: head pointer
  * @index: index of the required node
+ *
+ * Return: NULL on failure, the node on success
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
@@ -13,7 +15,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	if (!head)
 		return (NULL);
 	if (i == index)
-		return head;
+		return (head);
 	while (temp)
 	{
 		if (i == index)
