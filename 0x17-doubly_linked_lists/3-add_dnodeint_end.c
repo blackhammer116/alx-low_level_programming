@@ -3,6 +3,7 @@
  * add_dnodeint_end - adds a new node at the end of the list
  * @head: head pointer
  * @n: new element of the node
+ * Return: NULL if it fails, the new node on success
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
