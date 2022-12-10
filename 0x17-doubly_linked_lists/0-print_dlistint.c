@@ -2,12 +2,11 @@
 /**
  * print_dlistint - prints elements in DLL
  * @h: head pointer
+ * Return: number of nodes
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *temp;
-	temp = h->next;
-	temp = temp->prev;
+	const dlistint_t *temp = h;
 	size_t n = 0;
 
 	while (temp)
@@ -16,5 +15,5 @@ size_t print_dlistint(const dlistint_t *h)
 		temp = temp->next;
 		n++;
 	}
-	return n;
+	return (n);
 }
