@@ -1,6 +1,8 @@
 #include "lists.h"
 /**
- *
+ * add_dnodeint_end - adds a new node at the end of the list
+ * @head: head pointer
+ * @n: new element of the node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
@@ -21,7 +23,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	else
 	{
-		while (temp2)
+		while (temp2->next)
 		{
 			temp2 = temp2->next;
 		}
