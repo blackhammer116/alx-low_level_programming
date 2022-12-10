@@ -5,12 +5,13 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *temp = h;
+	dlistint_t *temp;
+	temp = h->prev;
 	size_t n = 0;
 
 	while (temp)
 	{
-		printf("%lu\n", temp->n);
+		printf("%d\n", temp->n);
 		temp = temp->next;
 		n++;
 	}
