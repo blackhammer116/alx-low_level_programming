@@ -6,7 +6,8 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	dlistint_t *temp;
-	temp = h->prev;
+	temp = h->next;
+	temp = temp->prev;
 	size_t n = 0;
 
 	while (temp)
